@@ -1,126 +1,138 @@
-*{
-margin:0;
-padding:0;
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 :active, :hover, :focus {
   outline: 0;
   outline-offset: 0;
 }
-  html {
-    background:white;
-    font-family: 'Lato', sans-serif;
-  }
-.body{
-width:1920px;
-height:100vh;
-margin:0;
-padding:0;
-font-family: 'Roboto', sans-serif;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-.auth{
-  display:sticky;
-  position: relative;
-  margin-left:35%;
-  width: 460px;
-  height: 600px;
-  background-color: #ffffff;
-  box-shadow: 0px 30px 50px 0px rgba(0,0,0,0.2);
-  border-radius: 4px;
+a{
+text-decoration: none;
 }
-.auth_header{
-position: absolute;
-width: 460px;
-height:33%;
+a:hover{
+color: #333;
+text-decoration: none;
 }
-.auth_main{
-position: absolute;
-top:33%;
-width: 460px;
-height:57%;
-justify-content:space-between;
+a:visited{
+  color: #333;
+  text-decoration:none
 }
-.auth_header_user{
-  width:100%;
-  height: 70px;
-  background-color: rgba(60,169,226,0.0); 
-}
-.auth_header_close{
-  width:100%;
-  height:28px;
-}
+/*Work Place*/
 
-.auth_header_title{
-  display:flex;
-  align-items: center;
-  justify-content: center;  
-  width:100%;
-  height:95px;
-  font-family: Lato;
-  font-size: 40px;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #000000;  
-}
-.auth_header_title-text{
-}
-.auth_main_form{
-position:absolute;
-}
-.auth_footer{
-  position:absolute;
-  width: 460px;
-  height: 60px;
-  bottom:0;
-  background-color: #eeedf1;
-}
-.auth_main_form input{
-  margin-left:10%;
-  width: 358px;
-  padding-left:5%;
-  padding-top:1%;
-  height: 50px;;
-  border: 1px solid #c2c0ca;
-  border-radius: 4px;
-  margin-bottom:20px;
-}
-input::placeholder {
-  font-family: Lato;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #8a8b8e;
-}
-.auth_footer_text{
-  margin:3% 0 0 20%;
-  font-family: Lato;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #8a8b8e;
-}
-.auth_footer_link{
-  font-size: 20px;
-  color: #3ca9e2;
-}
-input:focus {
-border: 1px solid #3ca9e2;
-}
-.auth_button{
-  width: 384px;
-  height: 50px;
-  margin-left:10%;
-  background-color: #3ca9e2;
-  border-radius: 4px;
-  border:none;
-  font-family: Lato;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #ffffff;  
+/*Left side bar*/
+.wrapper{
+display:flex;
+margin-left:25%;
+margin-top:5%;
+width:850px;
+height:400px;
 
 }
-.auth_button:focus{
-  cursor: pointer;
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:425px;
+    height:400px;
+    background-image: linear-gradient(0.0deg, rgba(0,87,134,0.99) 0%, rgba(0,117,139,0.99) 50%, #009d8c 100%);
+}
+.logo-img{
+margin-left:10%;
+}
+span{
+ font-weight:800;
+}
+.logo-text{
+ margin-top:5%;
+ margin-left:5%;
+ width:200px;
+ font-family: Montserrat;
+ font-size: 38.2px;
+ line-height: 46px;
+ font-weight: 400;
+ color: #ffffff;
 }
 
+/*Intro*/
+.intro{
+ width:425px;
+height:400px;
+background-color: #fffeff;
+}
+.intro-topside{
+    position: relative;
+    left:0;
+    padding:20% 0 0 15%;
+    width:425px;
+    height:150px;
+}
+.intro-name{
+    max-width: max-content;
+    font-family: Montserrat;
+    font-size: 52.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000;
+}
+.intro-title{
+    max-width: max-content;
+    font-family:Montserrat;
+    font-size: 30.3px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #a7bdb6;
+}
+.intro-buttomside{
+    width:425px;
+    height:250px;
+}
+.intro-made{
+    font-family: Montserrat;
+    font-size: 22.4px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
+    margin:10% 0 0 10%;
+}
