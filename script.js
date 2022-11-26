@@ -1,5 +1,5 @@
 "use strict"
-let a = prompt('',12);
+let a = prompt('Сколько коров на лугу?',12);
 let c = a % 10
 
 if (a <= 14 && a >= 11){
