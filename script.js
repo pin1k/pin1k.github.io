@@ -1,8 +1,14 @@
-"use stick"
+"use strict"
+let a = prompt('',12);
+let c = a % 10
 
-let userName = prompt('Как вас зовут?' , 0);
-
-let userAge = prompt('Сколько вам лет?' , 0);
-
-let userMood = prompt('Какое у вас настроние?' , 0);
-alert(`Вас зовут ${userName}\nВам ${userAge} \nВаше ${userMood} настроние мне нравится!  `);
+if (a <= 14 && a >= 11){
+  alert(`${a} korov`);
+} else if (c == 0 || c >=5 && c<=9){
+  alert(`${a} korov`)
+} else if(c == 1) {
+  alert(`${a} korova`);
+} else if(c >=2 && c <=4){
+  alert(`${a} korovy`)
+}
+  
